@@ -15,12 +15,15 @@ let images = new Vue ({
             if (this.counter == this.img.length) {
                 this.counter = 0;
             }
+            console.log(this.counter);
         },
         prevImg() {
-            this.counter--;
             if (this.counter === 0) {
-                this.counter = this.img.length - 1;
+                this.counter = (this.img.length - 1);
+            } else {
+                this.counter--;
             }
+            console.log(this.counter);
         }
     }
 })
